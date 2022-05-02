@@ -41,3 +41,12 @@ h1#top {
     font-family:'Courier New', Courier, monospace;
     font-size: 25px;
 }
+.calendar {
+    width: 580px;
+    height: 450px;
+    border-style: solid;
+    border-color: rgb(183, 244, 244);
+    border-width: 6px;
+    margin: 15px;
+    float: left;
+}
