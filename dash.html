@@ -6,5 +6,21 @@
     </head>
     <body>
         <h1 id="top">personal dashboard</h1>
+        <p id="date">Date: <span id="datetime"></span></p>
+        <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleDateString();
+        </script>
+        <div class="mails">
+            <fieldset>
+                <legend>MAILS</legend>
+                <div class="sent">
+                  <fieldset><legend>SENT</legend></fieldset>
+                </div>
+                <div class="inbox">
+                  <fieldset><legend>INBOX</legend></fieldset>
+                </div>
+            </fieldset>
+        </div>
     </body>
 </html>

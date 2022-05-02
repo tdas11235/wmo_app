@@ -12,3 +12,32 @@ h1#top {
     font-size: 45px;
     width: 100%;
 }
+.mails{
+    font-family: "Courier New", monospace;
+    background-color: #1b1b1b;
+    width: 100%;
+    color: yellow;
+    font-weight: bold;
+    font-size: 30px;
+    text-align: center;
+}
+.sent {
+    float: left;
+    width:580px;
+    margin: 10px;
+}
+.inbox {
+    float: left;
+    width: 590px;
+    margin: 10px;
+}
+#datetime {
+    color: orange;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+#date {
+    color: cyan;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+}
