@@ -1,0 +1,14 @@
+body {
+    background-color: #121212;
+}
+h1#top {
+    font-family: "Courier New", monospace;
+    background-color: #2e2d2d;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: underline;
+    text-align: center;
+    font-size: 45px;
+    width: 100%;
+}
