@@ -37,5 +37,48 @@
             </fieldset>
         </div>
         <script src="scripts.js"></script>
+        <script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+        <fieldset id="graphs">
+          <legend>BUDGET TRACKER</legend>
+        <div class="year">
+          <label for="myChart">Year-wise</label><br />
+        <canvas id="myChart" style="width:100%;max-width:580px;height:450px"></canvas>
+        <script>
+            var xyValues = [
+            {x:2012, y:7},
+            {x:2013, y:8},
+            {x:2014, y:8},
+            {x:2015, y:9},
+            {x:2016, y:9},
+            {x:2017, y:9},
+            {x:2018, y:10},
+            {x:2019, y:11},
+            {x:2020, y:14},
+            {x:2021, y:14},
+            {x:2022, y:15}
+            ];
+
+            new Chart("myChart", {
+            type: "scatter",
+            data: {
+            datasets: [{
+            pointRadius: 4,
+            pointBackgroundColor: "red",
+            data: xyValues
+            }]
+          },
+          options: {
+          legend: {display: false},
+          title: {
+              display: true,
+              text: "Year-Wise Expenditure"
+          },
+          scales: {
+          xAxes: [{ticks: {min: 2012, max:2023}}],
+          yAxes: [{ticks: {min: 6, max:16}, fontColor: 'white'}],
+        } 
+      }
+    });
+        </script>
     </body>
 </html>

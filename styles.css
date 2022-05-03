@@ -71,3 +71,10 @@ h1#top {
 a:hover{
     color:black;
 }
+#myChart{
+    width: 450px;
+    height: 450px;
+    background-color: rgb(17, 17, 17);
+    float: left;
+    margin: 15px;
+}
