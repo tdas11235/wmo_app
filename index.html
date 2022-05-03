@@ -40,7 +40,6 @@
         <script src ="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
         <fieldset id="graphs">
           <legend>BUDGET TRACKER</legend>
-        <div class="year">
           <label for="myChart">Year-wise</label><br />
         <canvas id="myChart" style="width:100%;max-width:580px;height:450px"></canvas>
         <script>
@@ -107,7 +106,136 @@
           }
         });
         </script>
-        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <label for="myChart4">Month-wise Income</label><br/>
+        <canvas id="myChart4" style="width:100%;max-width:600px"></canvas>
+                
+        <script>
+                var xValues = ["Jan", "Feb", "Mar", " Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+                var yValues = [65, 59, 64, 54, 35, 75, 86, 93, 53, 49, 57, 66];
+                var barColors = ["red", "green","blue","orange","brown", "red", "green","blue","orange","brown", "red", "green",];
+                
+                new Chart("myChart4", {
+                  type: "bar",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    legend: {display: false},
+                    title: {
+                      display: true,
+                      text: "Month-Wise Income"
+                    }
+                  }
+                });
+        </script>
+                <label for="myChart5">Expenditure Areas</label><br />
+                <canvas id="myChart5" style="width:100%;max-width:580px"></canvas>
+                
+                <script>
+                var xValues = ["Taxes", "Food", "Loans", "Others", "Leisure", "Education"];
+                var yValues = [20, 40, 30, 10, 15, 50];
+                var barColors = [
+                  "#b91d47",
+                  "#00aba9",
+                  "#2b5797",
+                  "#e8c3b9",
+                  "#1e7145",
+                  "#ff9980"
+                ];
+                
+                new Chart("myChart5", {
+                  type: "pie",
+                  data: {
+                    labels: xValues,
+                    datasets: [{
+                      backgroundColor: barColors,
+                      data: yValues
+                    }]
+                  },
+                  options: {
+                    title: {
+                      display: true,
+                      text: "Expenditure in May"
+                    }
+                  }
+                });
+                </script>
+                        <label for="myChart6">Expenditure Areas</label><br />
+                        <canvas id="myChart6" style="width:100%;max-width:580px"></canvas>
+                        
+                        <script>
+                        var xValues = ["Taxes", "Food", "Loans", "Others", "Leisure", "Education"];
+                        var yValues = [20, 40, 30, 10, 15, 50];
+                        var barColors = [
+                          "#b91d47",
+                          "#00aba9",
+                          "#2b5797",
+                          "#e8c3b9",
+                          "#1e7145",
+                          "#ff9980"
+                        ];
+                        
+                        new Chart("myChart6", {
+                          type: "doughnut",
+                          data: {
+                            labels: xValues,
+                            datasets: [{
+                              backgroundColor: barColors,
+                              data: yValues
+                            }]
+                          },
+                          options: {
+                            title: {
+                              display: true,
+                              text: "Expenditure in May"
+                            }
+                          }
+                        });
+                </script>
+                    <label for="myChart3">Year-wise Income</label><br />
+                    <canvas id="myChart3" style="width:100%;max-width:580px"></canvas>
+                <script>
+                        var xyValues = [
+                        {x:2012, y:16},
+                        {x:2013, y:10},
+                        {x:2014, y:9},
+                        {x:2015, y:10},
+                        {x:2016, y:11},
+                        {x:2017, y:12},
+                        {x:2018, y:10},
+                        {x:2019, y:13},
+                        {x:2020, y:16},
+                        {x:2021, y:16},
+                        {x:2022, y:15}
+                        ];
+            
+                        new Chart("myChart3", {
+                        type: "scatter",
+                        data: {
+                        datasets: [{
+                        pointRadius: 4,
+                        pointBackgroundColor: "orange",
+                        data: xyValues
+                        }]
+                      },
+                      options: {
+                      legend: {display: false},
+                      title: {
+                          display: true,
+                          text: "Year-Wise Income"
+                      },
+                      scales: {
+                      xAxes: [{ticks: {min: 2012, max:2023}}],
+                      yAxes: [{ticks: {min: 6, max:16}, fontColor: 'white'}],
+                    } 
+                  }
+                });
+             </script>
       </fieldset>
     </body>
 </html>
