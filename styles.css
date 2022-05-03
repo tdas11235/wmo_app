@@ -78,3 +78,10 @@ a:hover{
     float: left;
     margin: 15px;
 }
+#myChart2 {
+    background-color: rgb(17, 17, 17);
+}
+#graphs {
+    font-size: 30px;
+    color: white;
+}

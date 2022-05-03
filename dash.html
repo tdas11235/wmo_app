@@ -80,5 +80,34 @@
       }
     });
         </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+        <label for="myChart2">Month-wise</label><br/>
+        <canvas id="myChart2" style="width:100%;max-width:600px"></canvas>
+        
+        <script>
+        var xValues = ["Jan", "Feb", "Mar", " Apr", "May", "June", "July", "Aug", "Sept", "Oct", "Nov", "Dec"];
+        var yValues = [55, 49, 44, 24, 15, 65, 76, 23, 43, 45, 37, 26];
+        var barColors = ["red", "green","blue","orange","brown", "red", "green","blue","orange","brown", "red", "green",];
+        
+        new Chart("myChart2", {
+          type: "bar",
+          data: {
+            labels: xValues,
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues
+            }]
+          },
+          options: {
+            legend: {display: false},
+            title: {
+              display: true,
+              text: "Month-Wise Expenditure"
+            }
+          }
+        });
+        </script>
+        </div>
+      </fieldset>
     </body>
 </html>
