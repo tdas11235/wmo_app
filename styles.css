@@ -68,3 +68,6 @@ h1#top {
     font-family: "Courier New", monospace;
     font-weight: bold;
 }
+a:hover{
+    color:black;
+}
