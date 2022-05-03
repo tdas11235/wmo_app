@@ -50,3 +50,21 @@ h1#top {
     margin: 15px;
     float: left;
 }
+.todo
+{
+    float: left;
+    background-color:rgb(154, 223, 207);
+    font-size: 30px;
+    width: 590px;
+    height: 450px;
+    margin: 15px;
+    overflow: scroll;
+    border-style: solid;
+    border-color:blueviolet;
+    border-width: 6px;
+}
+#tasks {
+    color: red;
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
