@@ -72,10 +72,7 @@ a:hover{
     color:black;
 }
 #myChart{
-    width: 450px;
-    height: 450px;
     background-color: rgb(17, 17, 17);
-    float: left;
     margin: 15px;
 }
 #myChart2 {
@@ -87,24 +84,17 @@ a:hover{
 }
 #myChart3 {
     background-color: rgb(17, 17, 17);
-    width: 450px;
-    height: 250px;
-    float: left;
     margin: 15px;
 }
 #mychart4 {
     background-color: rgb(17, 17, 17);
-    height: 450px;
     margin: 15px;
 }
 #myChart5 {
     background-color:rgb(17, 17, 17);
-    height: 450px;
     margin: 15px;
 }
 #myChart6 {
     background-color:rgb(17, 17, 17);
-    height: 450px;
-    width: 450px;
     margin: 15px;
 }
